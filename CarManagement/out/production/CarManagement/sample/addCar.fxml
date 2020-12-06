@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="367.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddCar">
+   <children>
+      <Label alignment="CENTER" layoutX="232.0" layoutY="28.0" prefHeight="24.0" prefWidth="85.0" text="Add a Car">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="registration" layoutX="117.0" layoutY="85.0" prefHeight="26.0" prefWidth="131.0" />
+      <TextField fx:id="year" layoutX="338.0" layoutY="86.0" prefHeight="26.0" prefWidth="66.0" />
+      <TextField fx:id="colours" layoutX="117.0" layoutY="132.0" prefHeight="43.0" prefWidth="131.0" />
+      <TextField fx:id="price" layoutX="338.0" layoutY="140.0" prefHeight="26.0" prefWidth="86.0" />
+      <TextField fx:id="carMake" layoutX="117.0" layoutY="204.0" />
+      <TextField fx:id="carModel" layoutX="338.0" layoutY="204.0" />
+      <Label layoutX="35.0" layoutY="89.0" prefHeight="18.0" prefWidth="66.0" text="Registration" />
+      <Label layoutX="278.0" layoutY="90.0" prefHeight="18.0" prefWidth="50.0" text="Year" />
+      <Label layoutX="278.0" layoutY="144.0" prefHeight="18.0" prefWidth="50.0" text="Price" />
+      <Label layoutX="35.0" layoutY="144.0" prefHeight="18.0" prefWidth="50.0" text="Colours" />
+      <Label layoutX="35.0" layoutY="207.0" prefHeight="18.0" prefWidth="59.0" text="Car Make" />
+      <Label layoutX="278.0" layoutY="207.0" prefHeight="18.0" prefWidth="59.0" text="Car Model" />
+      <Button fx:id="submit" layoutX="248.0" layoutY="287.0" mnemonicParsing="false" onAction="#submitForm" text="Submit" />
+   </children>
+</AnchorPane>

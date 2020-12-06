@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="379.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewCar">
+   <children>
+      <TableView fx:id="carTableView" editable="true" layoutX="4.0" layoutY="37.0" onMouseClicked="#clickItem" prefHeight="279.0" prefWidth="549.0">
+        <columns>
+          <TableColumn fx:id="registration" prefWidth="90.39999532699585" text="Registration" />
+          <TableColumn fx:id="year" prefWidth="76.80004119873047" text="Year" />
+            <TableColumn fx:id="colors" prefWidth="112.0" text="Colour" />
+            <TableColumn fx:id="carMake" prefWidth="99.199951171875" text="Car Make" />
+            <TableColumn fx:id="carModel" prefWidth="108.800048828125" text="Car Model" />
+            <TableColumn fx:id="price" prefWidth="74.39999389648438" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="498.0" layoutY="331.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <TextField fx:id="searchRegistration" layoutX="151.0" layoutY="330.0" prefHeight="26.0" prefWidth="197.0" />
+      <Label layoutX="25.0" layoutY="330.0" prefHeight="26.0" prefWidth="126.0" text="Search Registration" />
+   </children>
+</AnchorPane>
